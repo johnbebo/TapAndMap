@@ -2,6 +2,8 @@ TapAndMap Version 1.3, created by John Bebo
 
 For installation instructions, go to http://TapAndMap.ninja
 
+NEW: the 2026 version (Leaflet + OpenStreetMap, no Google Maps key, runs as systemd services) is in the 2026 folder.  See 2026/README.txt.
+
 Feel free to donate a few BitCoin to 1Pq1pwxauSj1zQQLLQA4Suc9azVfFYU2dX
 
 TapAndMap is designed to run on a Raspberry Pi (2 or 3), with the on-board Ethernet used to manage and browse to it.
