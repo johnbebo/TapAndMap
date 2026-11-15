@@ -1,8 +1,10 @@
 TapAndMap Version 1.3, created by John Bebo
 
-For installation instructions, go to http://TapAndMap.ninja
+For installation instructions for the files in this folder (the 2025 version), go to
+https://wuwablog.blogspot.com/2025/02/2025-tap-and-map.html
 
-NEW: the 2026 version (Leaflet + OpenStreetMap, no Google Maps key, runs as systemd services) is in the 2026 folder.  See 2026/README.txt.
+NEW: the 2026 version (Leaflet + OpenStreetMap, no Google Maps key, runs as systemd services) is in the 2026 folder.
+See 2026/README.txt, and http://TapAndMap.ninja for the 2026 build instructions.
 
 Feel free to donate a few BitCoin to 1Pq1pwxauSj1zQQLLQA4Suc9azVfFYU2dX
 
