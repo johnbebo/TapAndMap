@@ -1,0 +1,15 @@
+[Unit]
+Description=TapAndMap sniffer (captures tap traffic into /tmp/tempfile)
+After=network.target
+Wants=tapandmap-web.service
+
+[Service]
+# Make sure the tap NIC is up and promiscuous (replaces the ifconfig lines in rc.local).
+# Change eth1 here and SniffInterface in TapAndMap.conf if the tap moves.
+ExecStartPre=-/usr/sbin/ip link set eth1 up promisc on
+ExecStart=/usr/bin/python3 /var/www/Sniff_Dev_Save_CSV.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

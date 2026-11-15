@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Tap And Map: live map.  This page is static: TapAndMap_Web.py writes connections.json and
+     tapandmap.js fetches it every RefreshRate ms.  Don't regenerate this file. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tap And Map</title>
+<link rel="stylesheet" href="leaflet/leaflet.css">
+<link rel="stylesheet" href="tapandmap.css">
+<script src="leaflet/leaflet.js"></script>
+<script src="tapandmap.js"></script>
+</head>
+<body data-mode="live">
+<div id="map"></div>
+<aside id="panel">
+  <h1>Tap And Map</h1>
+  <p class="links"><a href="history.html">Saved maps</a> · <a href="/logs/">Raw logs</a></p>
+  <p class="legend"><span class="tcp">● TCP</span> <span class="udp">● UDP</span> <span class="icmp">● ICMP</span></p>
+  <p id="status">Loading…</p>
+  <ul id="list"></ul>
+</aside>
+</body>
+</html>

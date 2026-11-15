@@ -1,0 +1,33 @@
+html, body { height: 100%; margin: 0; }
+body { display: flex; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #f5f2e8; }
+#map { flex: 1 1 80%; min-width: 0; height: 100%; }
+#map.map-error { display: flex; align-items: center; justify-content: center; padding: 2em; color: #a00; text-align: center; }
+#panel { flex: 0 0 20%; min-width: 260px; height: 100%; overflow-y: auto; box-sizing: border-box; padding: 10px 12px;
+         background: #f5f2e8; border-left: 1px solid #d6d0bd; }
+#panel h1 { font-size: 1.15em; margin: 0 0 4px; }
+#panel p { margin: 4px 0; font-size: .9em; }
+#panel a { color: #1a5fb4; }
+#panel select { width: 100%; }
+.legend span { margin-right: 8px; font-weight: 600; }
+.tcp { color: #d93025; } .udp { color: #1a73e8; } .icmp { color: #188038; }
+#status { color: #555; }
+#status.bad { color: #a00; font-weight: 600; }
+#list { list-style: none; margin: 8px 0 0; padding: 0; font-family: ui-monospace, Menlo, Consolas, monospace; }
+#list li { padding: 2px 0; border-bottom: 1px solid #e6e0cc; word-break: break-word; }
+#list li.located { cursor: pointer; }
+#list li.located:hover { background: #ebe5d2; }
+.iw p { margin: 3px 0; }
+@media (max-width: 700px) {
+  body { flex-direction: column; }
+  #map { flex: 0 0 60%; height: auto; }
+  #panel { flex: 1 1 auto; min-width: 0; height: auto; border-left: 0; border-top: 1px solid #d6d0bd; }
+}
+/* Clear Map / Show all buttons, floating at the top centre of the map */
+#map { position: relative; }
+.map-ctl { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 6px; }
+.map-ctl button { height: 34px; padding: 0 14px; border: 2px solid rgba(0,0,0,.2); border-radius: 4px; background: #fff;
+                  background-clip: padding-box; color: #333; font: 600 14px system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+                  cursor: pointer; }
+.map-ctl button:hover { background: #f4f4f4; color: #000; }
+.map-ctl button[hidden] { display: none; }
+.leaflet-popup-content .iw strong { font-size: 1.05em; }

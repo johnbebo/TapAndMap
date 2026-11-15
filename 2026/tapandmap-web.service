@@ -1,0 +1,11 @@
+[Unit]
+Description=TapAndMap web exporter (publishes connections.json for the map page)
+After=network.target apache2.service
+
+[Service]
+ExecStart=/usr/bin/python3 /var/www/TapAndMap_Web.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

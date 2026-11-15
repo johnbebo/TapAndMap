@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Tap And Map: saved maps.  Plots any log in /logs/ (listed in history.json). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tap And Map – Saved Maps</title>
+<link rel="stylesheet" href="leaflet/leaflet.css">
+<link rel="stylesheet" href="tapandmap.css">
+<script src="leaflet/leaflet.js"></script>
+<script src="tapandmap.js"></script>
+</head>
+<body data-mode="history">
+<div id="map"></div>
+<aside id="panel">
+  <h1>Saved maps</h1>
+  <p class="links"><a href="./">Live map</a> · <a href="/logs/">Raw logs</a></p>
+  <p><select id="logs" aria-label="Log file"></select></p>
+  <p class="legend"><span class="tcp">● TCP</span> <span class="udp">● UDP</span> <span class="icmp">● ICMP</span></p>
+  <p id="status">Loading…</p>
+  <ul id="list"></ul>
+</aside>
+</body>
+</html>
