@@ -4,8 +4,9 @@ The 2026 rebuild of TapAndMap: a Raspberry Pi that watches the traffic on a mirr
 port or network tap, geolocates every public address with MaxMind GeoLite2, and draws it
 live on a Leaflet + OpenStreetMap map.  No Google Maps API key needed.
 
-Step-by-step build instructions are in the "2026 Tap And Map" post on
-https://wuwablog.blogspot.com  (the older 2025 build is at http://TapAndMap.ninja)
+Step-by-step build instructions: http://TapAndMap.ninja
+  (https://wuwablog.blogspot.com/2026/11/2026-tap-and-map-build-it-from-scratch.html)
+The older 2025 build is at https://wuwablog.blogspot.com/2025/02/2025-tap-and-map.html
 
 Where each file goes on the Pi:
 
